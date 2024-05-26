@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --primaryColor: #f2f3f9;
+  --btn-color: #5735f8;
+  --outline: #adc1e6;
+  --red-color: #7c0924;
+  --green-color: #1a7851;
+}
+
+body {
+  background-color: var(--primaryColor) !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.task-form {
+  background-color: var(--white);
+  width: 40%;
+  margin: 100px auto 70px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 2px 5px 3px #e8e8e8;
+}
+
+.task-form h4 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 20px !important;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+}
+
+.form-container input {
+  border: none;
+  background-color: var(--primaryColor);
+  outline-color: var(--outline);
+  padding: 7px 15px;
+  width: 75%;
+}
+
+::placeholder {
+  color: #b6b4b4;
+}
+
+.form-container button {
+  border: none;
+  width: 25%;
+  background-color: var(--btn-color);
+  color: var(--white);
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+
+.loading {
+  color: rgb(215, 0, 0);
+  text-align: center;
+  visibility: hidden;
+}
+
+.empty-tasks {
+  font-size: 17px;
+  color: var(--red-color);
+}
+
+.tasks-container {
+
+  width: 40%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center ;
+
+}
+
+.single-task {
+  background-color: var(--white);
+  width: 100%;
+  box-shadow: 1px 2px 5px 3px #e8e8e8;
+  padding: 15px 20px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single-task h5 {
+  font-size: 15px;
+  font-weight: 500;
+  /* background-color: #5735f8; */
+  /* width: 30%; */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* margin-left: 50px; */
+  /* padding-left: 40px; */
+}
+
+.single-task.taskCompleted h5 span {
+text-decoration: line-through;
+  margin-left: 15px;
+}
+
+.single-task h5 i {
+  color: var(--green-color);
+  display: none;
+
+}
+
+.single-task.taskCompleted h5 i {
+  display: block;
+}
+
+.task-btns {
+  width: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-btns a {
+  color: var(--green-color);
+  font-size: 15px;
+}
+
+.task-btns button {
+  color: var(--red-color);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.form-alert,
+.edit-alert {
+  display: none;
+  align-self: flex-start;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.form-alert.success,
+.edit-alert.success {
+  color: var(--green-color);
+}
+
+.form-alert.error,
+.edit-alert.error {
+  color: var(--red-color);
+}

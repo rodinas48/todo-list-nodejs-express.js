@@ -1,0 +1,101 @@
+.editTaskContainer {
+  background-color: var(--white);
+  width: 40%;
+  margin: 100px auto 70px;
+  padding: 50px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 2px 5px 3px #e8e8e8;
+  font-weight: 500;
+  /* letter-spacing: 1px; */
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.edit {
+  margin: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit input[type="text"] {
+  width: 70%;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(40, 44, 56);
+}
+
+.edit input[type="text"]#taskName {
+
+  background-color: var(--primaryColor);
+}
+
+button {
+  border: none;
+  padding: 5px;
+  color: var(--white);
+  background-color: var(--btn-color);
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 5px !important;
+  margin-top: 20px !important;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3c1fc9;
+}
+
+.edit-alert {
+  margin: auto;
+  margin-top: 10px;
+}
+
+.edit-alert.success {
+  color: var(--green-color);
+}
+
+.edit-alert.error {
+  color: var(--red-color);
+}
+
+.backBtn {
+  /* display: inline-block;
+  margin: auto; */
+  text-align: center;
+}
+
+#back {
+  padding: 7px 50px;
+  /*display: block;
+  */
+  /*margin: auto;*/
+  color: #e8e8e8;
+  background-color: #242424;
+  /*text-align: center;*/
+  border-radius: 5px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+#back:hover {
+  background-color: #000;
+}
